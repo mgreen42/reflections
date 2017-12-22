@@ -3,18 +3,22 @@ What happens when you initialize a repository? Why do you need to do it?
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 	The staging area is like the loading zone for the git operation. The cool part about it is that you don’t have to include all the files in your repository to commit, because a lot of them mightn’t be relevant, or change with each commit.
-	
+
 How can you use the staging area to make sure you have one commit per logical
 change?
 	Only put the files that have changed into the commit
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	Oh gosh this is getting difficult. Branches help when you are trying out a new feature or trying to fix a bug, without crashing the whole code and not knowing where to go back to. If the bug fixing didn't work, you know where to start again.
 
 How do the diagrams help you visualize the branch structure?
+	By knowing what the parents are of each commit, and how to access each commit through their branch name.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	Merging two branches together take the positive changes in each file to make a new file. If any lines in the original file were deleted after the original, then those lines won't be added back in, even if they are part of on of the branches.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	It may be a pain to go through all the conflicts, but it's better than the code not working after you merge the two files together. Being able to look at the conflicts lets you decide what should be changed and let soyu kep control of the code.
